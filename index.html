@@ -21,10 +21,10 @@
 	<body>
 		<div class="main-container">
 			<div class="form-container">
-				<div class="intro-text"><h1>Contact Us</h1></div>
+				<header class="intro-text"><h1>Contact Us</h1></header>
 				<form>
 					<fieldset id="fieldset">
-						<div class="name-fields">
+						<section class="name-fields">
 							<div class="label-positioning field">
 								<label for="first-name">First Name *</label>
 								<input
@@ -53,8 +53,8 @@
 									>Please enter a valid last name.</span
 								>
 							</div>
-						</div>
-						<div class="email-field field label-positioning">
+						</section>
+						<section class="email-field field label-positioning">
 							<label for="email">Email Address *</label>
 							<input
 								type="email"
@@ -67,7 +67,7 @@
 							<span class="email-error error"
 								>Please enter a valid email address.</span
 							>
-						</div>
+						</section>
 						<div>
 							<legend>Query Type *</legend>
 							<div
@@ -75,7 +75,10 @@
 								role="radiogroup"
 								aria-required="true"
 							>
-								<div class="query" role="radio">
+								<div class="query">
+									<label for="query1" id="general-query"
+										>General Enquiry<span class="extra">______</span></label
+									>
 									<input
 										type="radio"
 										id="query1"
@@ -84,11 +87,11 @@
 										required
 										aria-labelledby="general-query"
 									/>
-									<label for="query1" id="general-query"
-										>General Enquiry<span class="extra">______</span></label
-									>
 								</div>
-								<div class="query" role="radio">
+								<div class="query">
+									<label for="query2" id="support-query"
+										>Support Request<span class="extra">______</span></label
+									>
 									<input
 										type="radio"
 										id="query2"
@@ -97,9 +100,6 @@
 										aria-labelledby="support-query"
 										required
 									/>
-									<label for="query2" id="support-query"
-										>Support Request<span class="extra">______</span></label
-									>
 								</div>
 							</div>
 						</div>
