@@ -113,7 +113,7 @@ queryContainer.forEach((query) => {
 
 function focusConsent() {
 	const consentParent = consent.parentElement
-	consentParent.style.border = '1.2px solid var(--medium-green)'
+	consentParent.style.border = '1.8px solid var(--medium-green)'
 	consentParent.style.padding = '0.3rem'
 }
 
