@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Contact form</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="form-container">
+				<div class="intro-text"><h1>Contact Us</h1></div>
+				<form>
+					<fieldset id="fieldset">
+						<div class="name-fields">
+							<div class="label-positioning field">
+								<label for="first-name">First Name *</label>
+								<input
+									type="text"
+									id="first-name"
+									class="first"
+									required
+									autocomplete
+									aria-required="true"
+								/>
+								<span class="first-error error"
+									>Please enter a valid first name.</span
+								>
+							</div>
+							<div class="label-positioning">
+								<label for="last-name">Last Name *</label>
+								<input
+									type="text"
+									id="last-name"
+									class="last"
+									required
+									autocomplete
+									aria-required="true"
+								/>
+								<span class="last-error error"
+									>Please enter a valid last name.</span
+								>
+							</div>
+						</div>
+						<div class="email-field field label-positioning">
+							<label for="email">Email Address *</label>
+							<input
+								type="email"
+								id="email"
+								class="email"
+								required
+								autocomplete
+								aria-required="true"
+							/>
+							<span class="email-error error"
+								>Please enter a valid email address.</span
+							>
+						</div>
+						<div>
+							<legend>Query Type *</legend>
+							<div
+								class="label-positioning field query-fields"
+								role="radiogroup"
+								aria-required="true"
+							>
+								<div class="query" role="radio">
+									<input
+										type="radio"
+										id="query1"
+										name="query"
+										tabindex="0"
+										required
+										aria-labelledby="general-query"
+									/>
+									<label for="query1" id="general-query"
+										>General Enquiry<span class="extra">______</span></label
+									>
+								</div>
+								<div class="query" role="radio">
+									<input
+										type="radio"
+										id="query2"
+										name="query"
+										tabindex="0"
+										aria-labelledby="support-query"
+										required
+									/>
+									<label for="query2" id="support-query"
+										>Support Request<span class="extra">______</span></label
+									>
+								</div>
+							</div>
+						</div>
+
+						<span class="query-error error">Please select an option.</span>
+						<div class="label-positioning">
+							<label for="message">Message *</label>
+							<textarea
+								name="message"
+								id="message"
+								class="message"
+								aria-required="true"
+							></textarea>
+						</div>
+						<span class="message-error error">Please enter a message.</span>
+						<label class="consent-check" aria-label="Consent checkbox">
+							<input
+								type="checkbox"
+								name="consent"
+								class="consent"
+								aria-required="true"
+								required
+							/>
+							<span class="checkmark"></span>
+							<p>I consent to being contacted by the team. *</p>
+						</label>
+						<span class="consent-error error"
+							>Please confirm your consent.</span
+						>
+						<button class="submit">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="alert">
+				<p></p>
+			</div>
+		</div>
+	</body>
+</html>
